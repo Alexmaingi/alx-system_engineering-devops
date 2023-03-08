@@ -1,2 +1,2 @@
 #!/bin/bash
-cp -u -v $src_dir/*.html $dest_dir/
+find ./ -maxdepth 1 -name '*.HTML' -newer ../ -exec cp {} .. \
